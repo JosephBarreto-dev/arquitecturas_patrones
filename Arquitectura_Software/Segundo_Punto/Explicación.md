@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3966edee-3b83-403c-acbe-286f22622798)
+![Captura de pantalla 2025-05-23 155107](https://github.com/user-attachments/assets/416357aa-3774-44fa-a909-d8cbf386c6d8)
 
 Migración de monolito a microservicios
 
