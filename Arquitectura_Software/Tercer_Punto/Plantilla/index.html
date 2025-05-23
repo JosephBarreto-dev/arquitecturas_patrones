@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas colaborativas</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <a href="/add">Agregar nueva tarea</a>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                {% if task.done %}
+                    ✅ <s>{{ task.title }}</s>
+                {% else %}
+                    🔲 {{ task.title }} 
+                    <a href="/complete/{{ task.id }}">Marcar compleada</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
