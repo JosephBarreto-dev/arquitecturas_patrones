@@ -1,4 +1,0 @@
-Requerimientos de Main
-fastapi
-uvicorn
-pymongo

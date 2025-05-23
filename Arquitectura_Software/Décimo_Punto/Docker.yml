@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  usuario:
+    build: ./usuario
+    ports:
+      - "5000:5000"
+
+  producto:
+    build: ./producto
+    ports:
+      - "5001:5001"
+
+  notificacion:
+    build: ./notificacion
+    ports:
+      - "5002:5002"
