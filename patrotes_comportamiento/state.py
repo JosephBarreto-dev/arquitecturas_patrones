@@ -53,11 +53,11 @@ class Orden:
     
 envio = Orden()
 
-envio.mostrar_estado()          # ⏳ Pendiente
+envio.mostrar_estado() # ⏳ Pendiente
 envio.cambiar_estado() # 📦 → ⚙️
-envio.mostrar_estado()          # 🔄 Procesando
+envio.mostrar_estado() # 🔄 Procesando
 envio.cambiar_estado() # ⚙️ → 🚚
-envio.mostrar_estado()          # 📤 Enviado
+envio.mostrar_estado() # 📤 Enviado
 envio.cambiar_estado() # 🚚 → ✅
-envio.mostrar_estado()          # 📬 Entregado
+envio.mostrar_estado() # 📬 Entregado
 envio.cambiar_estado() # ✅ ya no cambia
