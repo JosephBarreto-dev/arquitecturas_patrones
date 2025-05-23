@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  usuarios:
+    build: ./usuarios
+    ports:
+      - "8001:8000"
+    depends_on:
+      - mongo_usuarios
+    environment:
+      - MONGO_URL=mongodb://mongo_usuarios:27017
+
+  pedidos:
+    build: ./pedidos
+    ports:
+      - "8002:8000"
+    depends_on:
+      - mongo_pedidos
+    environment:
+      - MONGO_URL=mongodb://mongo_pedidos:27017
+
+  productos:
+    build: ./productos
+    ports:
+      - "8003:8000"
+    depends_on:
+      - mongo_productos
+    environment:
+      - MONGO_URL=mongodb://mongo_productos:27017
+
+  mongo_usuarios:
+    image: mongo
+    container_name: mongo_usuarios
+
+  mongo_pedidos:
+    image: mongo
+    container_name: mongo_pedidos
+
+  mongo_productos:
+    image: mongo
+    container_name: mongo_productos
