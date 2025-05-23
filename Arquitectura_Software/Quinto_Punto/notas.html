@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Notas de {{ nombre }}</title></head>
+<body>
+    <h2>Notas de {{ nombre }}</h2>
+    <ul>
+        {% for materia, nota in notas %}
+        <li>{{ materia }}: {{ nota }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
